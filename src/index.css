@@ -1,20 +1,21 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 html,
 .root {
   height: 100%;
 }
 
 body {
-  background-color: #fff;
-  box-sizing: border-box;
-  height: 100%;
   margin: 0;
   padding: 0;
-  font-family: 'Karla', helvetica, sans-serif;
+  height: 100%;
+  font-family: sans-serif;
+  background-color: #fff;
   -webkit-text-size-adjust: 100%;
-}
-
-input {
-  font-family: 'Cousine', monospace;
 }
 
 h1 {
@@ -35,13 +36,13 @@ label {
 
 a,
 .btnText {
-  background-color: rgba(242, 17, 7, 0);
-  border: 0;
-  border-bottom: 2px solid rgba(242, 17, 7, 0.15);
-  color: #f21107;
   display: inline-block;
   cursor: pointer;
+  border: 0;
+  color: #f21107;
   text-decoration: none;
+  background-color: rgba(242, 17, 7, 0);
+  border-bottom: 2px solid rgba(242, 17, 7, 0.15);
   transition: 0.1s ease;
 }
 
@@ -71,16 +72,8 @@ label .btnText {
   position: relative;
 }
 
-label .btnText::before {
-  content: '|';
-  display: inline-block;
-  left: -0.5rem;
-  position: relative;
-}
-
 main {
   align-items: flex-start;
-  box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
   height: 100%;
@@ -91,7 +84,6 @@ main {
   background-color: transparent;
   border-radius: 0;
   cursor: text;
-  box-sizing: border-box;
   display: block;
   transition: 0.2s ease;
   width: 100%;

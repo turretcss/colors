@@ -1,39 +1,38 @@
 .controls {
   align-self: flex-end;
-  background-color: #fff;
   width: 100%;
+  background-color: #fff;
 }
 
 .controlsHeading {
-  color: #f21107;
-  font-size: 1rem;
-  font-weight: 700;
   margin: 0;
   padding: 0.75rem 0 0 0;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #f21107;
 }
 
 .colorFunc {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   margin: 0 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .colorFuncInput {
-  border: 0;
-  box-sizing: border-box;
-  color: #252525;
-  font-size: 1.2rem;
-  margin: 1rem 0 0.7rem 0;
   padding: 0;
+  margin: 1rem 0 0.7rem 0;
+  font-size: 1.2rem;
+  color: #252525;
+  border: 0;
 }
 
 .colorFuncInput::-moz-selection {
-  background-color: #f21107;
   color: #fff;
+  background-color: #f21107;
 }
 
 .colorFuncInput::selection {
-  background-color: #f21107;
   color: #fff;
+  background-color: #f21107;
 }
 
 .adjusters .controlsHeading {
@@ -41,21 +40,19 @@
 }
 
 .adjustersList {
-  box-sizing: border-box;
   display: flex;
   justify-content: space-between;
-  list-style: none;
   margin: 0;
-  overflow-x: scroll;
   padding: 0.3rem 1rem 0.9rem 0;
+  list-style: none;
+  overflow-x: scroll;
 }
 
 .adjustersList li {
-  box-sizing: border-box;
   display: block;
   margin-right: 1.5rem;
-  min-width: 9rem;
   padding: 0.5rem;
+  min-width: 9rem;
 }
 
 .adjustersList li:last-child {
