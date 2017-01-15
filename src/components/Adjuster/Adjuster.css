@@ -1,8 +1,4 @@
 .adjuster {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
   min-width: 9rem;
   color: #252525;
   text-align: center;
@@ -13,63 +9,14 @@
   position: relative;
   display: flex;
   flex-basis: 100%;
-  align-items: center;
-  justify-content: center;
-  padding: 0.5rem 0.75rem;
-  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
   cursor: pointer;
-}
-
-.adjusterLabel input {
-  z-index: -1;
-  position: absolute;
-  opacity: 0;
-}
-
-.checkboxCustom {
-  position: relative;
-  display: block;
-  margin-left: -0.9rem;
-  margin-right: 0.4rem;
-  width: 0.8rem;
-  height: 0.8rem;
-  border-radius: 3px;
-  border: 1px solid #f21107;
-  background-color: rgba(242, 17, 7, 0);
-  transition: 0.1s ease;
-}
-
-.checkboxCustom::after {
-  display: none;
-  position: absolute;
-  top: 1px;
-  left: 3px;
-  width: 3px;
-  height: 6px;
-  content: '';
-  border: solid #fff;
-  border-width: 0 2px 2px 0;
-  transform: rotate(45deg);
-}
-
-.adjusterLabel input:checked ~ .checkboxCustom::after {
-  display: block;
-}
-
-.adjusterLabel input:focus ~ .checkboxCustom,
-.adjusterLabel:hover .checkboxCustom,
-.adjusterLabel:focus .checkboxCustom {
-  box-shadow: 0 0 3px rgba(242, 17, 7, 0.8);
-}
-
-.adjusterLabel input:checked ~ .checkboxCustom {
-  background-color: rgba(242, 17, 7, 0.9);
 }
 
 .adjusterValue {
   display: flex;
   flex-basis: 100%;
-  padding: 0.5rem 0.75rem;
 }
 
 .adjusterRangeContainer {
@@ -79,16 +26,16 @@
 }
 
 .adjusterInputContainer {
-  flex-basis: 4.8rem;
+  flex-basis: 3rem;
+  padding: 0.2rem;
 }
 
 .adjusterValInput {
   display: block;
   margin: 0;
-  padding: 0.25rem 0.1rem;
   width: 100%;
   font-size: 0.9rem;
-  color: #f21107;
+  color: #666;
   text-align: center;
   border: 0;
   border-radius: 0;
@@ -100,7 +47,7 @@
   margin: 0;
   padding: 0;
   width: 100%;
-  color: #f21107;
+  color: #666;
   appearance: none;
   background-color: transparent;
 }

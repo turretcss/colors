@@ -12,6 +12,7 @@ html,
 body {
   margin: 0;
   padding: 0;
+  padding-right: 320px;
   height: 100%;
   font-family: sans-serif;
   background-color: #fff;
@@ -32,39 +33,6 @@ h4 {
 label {
   display: block;
   font-size: 1.2rem;
-}
-
-a,
-.btnText {
-  display: inline-block;
-  cursor: pointer;
-  border: 0;
-  color: #f21107;
-  text-decoration: none;
-  background-color: rgba(242, 17, 7, 0);
-  border-bottom: 2px solid rgba(242, 17, 7, 0.15);
-  transition: 0.1s ease;
-}
-
-a:hover,
-a:focus,
-.btnText:hover,
-.btnText:focus {
-  background-color: rgba(242, 17, 7, 0.1);
-  border-color: #f21107;
-}
-
-a:focus,
-.btnText:focus {
-  box-shadow: 0 0 3px rgba(242, 17, 7, 0.8);
-  outline: none;
-}
-
-.btnText {
-  border-radius: 0;
-  font-family: 'Karla', helvetica, sans-serif;
-  font-size: 0.75rem;
-  padding: 0.2rem 0;
 }
 
 label .btnText {
