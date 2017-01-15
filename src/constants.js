@@ -1,4 +1,5 @@
-export const DEFAULT_BASE_COLOR = `#${Math.random().toString(16).slice(2, 8)}`;
+// export const DEFAULT_BASE_COLOR = `#${Math.random().toString(16).slice(2, 8)}`;
+export const DEFAULT_BASE_COLOR = '#3455DB';
 
 export const DEFAULT_ADJUSTERS = [
   {
