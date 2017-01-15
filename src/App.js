@@ -13,10 +13,10 @@ import {
   getColorFromQueryVal,
   getColorFuncString,
   getContrastColor,
-} from 'utils/color';
+} from './utils/color';
 
-import Colors from 'components/Colors';
-import Controls from 'components/Controls';
+import Colors from './components/Colors';
+import Controls from './components/Controls';
 import color from 'color';
 import colorFn from 'css-color-function';
 
