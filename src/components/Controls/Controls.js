@@ -43,28 +43,25 @@ class Controls extends Component {
 
     return (
       <div className='controls'>
-        <div className='colorFunc'>
-          <label className='controlsHeading' htmlFor='colorFunc'>
+        <div className='color-function'>
+          <label className='controls-heading' htmlFor='colorFunc'>
             Color function
-            <button className='btnText' onClick={shortNamesOnClick}>
+            <button onClick={shortNamesOnClick}>
               {useShortNames ? 'Use full names' : 'Use short names' }
             </button>
           </label>
-          <input className='resetInput colorFuncInput'
+          <input className='resetInput color-function-input'
             id='colorFunc'
             type='text'
             readOnly
             value={colorFuncStr} />
         </div>
-
-        <div className='adjusters'>
-          <h3 className='controlsHeading'>
-            Adjusters
-          </h3>
-          <ul className='adjustersList'>
-            {adjusterListItems}
-          </ul>
-        </div>
+        <h3 className='controls-heading'>
+          Adjusters
+        </h3>
+        <ul className='controls-list'>
+          {adjusterListItems}
+        </ul>
       </div>
     );
   };

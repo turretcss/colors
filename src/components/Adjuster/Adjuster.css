@@ -5,7 +5,7 @@
   overflow: hidden;
 }
 
-.adjusterLabel {
+.adjuster-label {
   position: relative;
   display: flex;
   flex-basis: 100%;
@@ -14,23 +14,23 @@
   cursor: pointer;
 }
 
-.adjusterValue {
+.adjuster-value {
   display: flex;
   flex-basis: 100%;
 }
 
-.adjusterRangeContainer {
+.adjuster-range-container {
   display: flex;
   flex-grow: 1;
   align-items: center;
 }
 
-.adjusterInputContainer {
+.adjuster-input-container {
   flex-basis: 3rem;
   padding: 0.2rem;
 }
 
-.adjusterValInput {
+.adjuster-value-input {
   display: block;
   margin: 0;
   width: 100%;
@@ -42,7 +42,7 @@
   background-color: transparent;
 }
 
-.adjusterValRange {
+.adjuster-value-range {
   display: block;
   margin: 0;
   padding: 0;
@@ -52,11 +52,11 @@
   background-color: transparent;
 }
 
-.adjusterValRange:focus {
+.adjuster-value-range:focus {
   outline: none;
 }
 
-.adjusterValRange::-webkit-slider-runnable-track {
+.adjuster-value-range::-webkit-slider-runnable-track {
   width: 100%;
   height: 2px;
   cursor: pointer;
@@ -64,7 +64,7 @@
   border-radius: 2px;
 }
 
-.adjusterValRange::-moz-range-track {
+.adjuster-value-range::-moz-range-track {
   height: 2px;
   width: 100%;
   cursor: pointer;
@@ -72,7 +72,7 @@
   border-radius: 2px;
 }
 
-.adjusterValRange::-webkit-slider-thumb {
+.adjuster-value-range::-webkit-slider-thumb {
   margin-top: -0.8rem;
   width: 1.6rem;
   height: 1.6rem;
@@ -84,14 +84,14 @@
   transition: 0.1s ease;
 }
 
-.adjusterValRange::-webkit-slider-thumb:hover,
-.adjusterValRange::-webkit-slider-thumb:active {
+.adjuster-value-range::-webkit-slider-thumb:hover,
+.adjuster-value-range::-webkit-slider-thumb:active {
   margin-top: -1.8rem;
   width: 2.5rem;
   height: 2.5rem;
 }
 
-.adjusterValRange::-moz-range-thumb {
+.adjuster-value-range::-moz-range-thumb {
   width: 0.75rem;
   height: 0.75rem;
   cursor: pointer;
@@ -102,23 +102,23 @@
   transition: 0.1s ease;
 }
 
-.adjusterValRange::-moz-range-thumb:hover,
-.adjusterValRange::-moz-range-thumb:active {
+.adjuster-value-range::-moz-range-thumb:hover,
+.adjuster-value-range::-moz-range-thumb:active {
   margin-top: -0.5rem;
   width: 1.1rem;
   height: 1.1rem;
 }
 
 @media (hover) {
-  .adjusterValRange::-webkit-slider-thumb {
+  .adjuster-value-range::-webkit-slider-thumb {
     margin-top: -0.3rem;
     width: 0.75rem;
     height: 0.75rem;
     border-radius: 1rem;
   }
 
-  .adjusterValRange::-webkit-slider-thumb:hover,
-  .adjusterValRange::-webkit-slider-thumb:active {
+  .adjuster-value-range::-webkit-slider-thumb:hover,
+  .adjuster-value-range::-webkit-slider-thumb:active {
     margin-top: -0.5rem;
     width: 1.1rem;
     height: 1.1rem;

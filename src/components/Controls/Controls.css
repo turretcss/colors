@@ -9,19 +9,19 @@
   overflow-y: scroll;
 }
 
-.controlsHeading {
+.controls-heading {
   margin: 0;
   margin-bottom: 0.5rem;
   font-size: 1rem;
   font-weight: 600;
 }
 
-.colorFunc {
+.color-function {
   margin-bottom: 1rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-.colorFuncInput {
+.color-function-input {
   padding: 0;
   margin: 1rem 0 0.7rem 0;
   font-size: 1rem;
@@ -29,20 +29,20 @@
   border: 0;
 }
 
-.adjustersList {
+.controls-list {
   margin: 0;
   padding: 0;
   list-style: none;
   overflow-x: scroll;
 }
 
-.adjustersList li {
+.controls-list li {
   display: block;
   margin: 0;
   margin-bottom: 1rem;
   padding: 0;
 }
 
-.adjustersList li:last-child {
+.controls-list li:last-child {
   margin-bottom: 0;
 }

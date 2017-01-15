@@ -28,14 +28,14 @@ class Swatch extends Component {
 
     return (
       <div className='swatches'>
-        <div className='swatchContainer baseColorContainer'
+        <div className='swatch-container'
           style={{
             backgroundColor: inputColor,
             swatch: inputContrastColor
           }}>
 
-          <div className='swatchInfo'>
-            <input className='resetInput swatchInput'
+          <div className='swatch-info'>
+            <input className='resetInput swatch-input'
               style={{
                 swatch: inputContrastColor
               }}
@@ -50,13 +50,13 @@ class Swatch extends Component {
           </div>
         </div>
 
-        <div className='swatchContainer outputColorContainer'
+        <div className='swatch-container'
           style={{
             backgroundColor: outputColor,
             color: outputContrastColor
           }}>
-          <div className='swatchInfo'>
-            <input className='resetInput swatchInput'
+          <div className='swatch-info'>
+            <input className='resetInput swatch-input'
               style={{
                 color: outputContrastColor
               }}

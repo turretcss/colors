@@ -33,21 +33,20 @@ class Adjuster extends Component {
 
     return (
       <div className='adjuster'>
-        <label className='adjusterLabel'
+        <label className='adjuster-label'
           htmlFor={`adjuster${name}`}>
 
-          <input className='adjusterValCheckbox'
+          <input className='adjuster-value-checkbox'
             id={`adjuster${name}`}
             type='checkbox'
             name={name}
             checked={enabled}
             onChange={onChange} />
-
-          <span className='checkboxCustom'></span> {name}
+            {name}
         </label>
-        <div className={`adjusterValue ${enabled ? '' : 'adjusterValueDisabled'}`}>
-          <div className='adjusterRangeContainer'>
-            <input className='adjusterValRange'
+        <div className={`adjuster-value ${enabled ? '' : 'adjuster-value-disabled'}`}>
+          <div className='adjuster-range-container'>
+            <input className='adjuster-value-range'
               aria-label={`${name} value`}
               type='range'
               name={`${name}Value`}
@@ -57,8 +56,8 @@ class Adjuster extends Component {
               onChange={onChange} />
           </div>
 
-          <div className='adjusterInputContainer'>
-            <input className='adjusterValInput'
+          <div className='adjuster-input-container'>
+            <input className='adjuster-value-input'
               aria-label={`${name} value`}
               type='number'
               name={`${name}Value`}
