@@ -1,8 +1,8 @@
-import './Colors.css';
+import './Swatch.css';
 
 import React, {Component, PropTypes} from 'react';
 
-class Colors extends Component {
+class Swatch extends Component {
   static propTypes = {
     inputColor: PropTypes.string.isRequired,
     inputColorDisplay: PropTypes.string.isRequired,
@@ -27,17 +27,17 @@ class Colors extends Component {
     } = this.props;
 
     return (
-      <div className='colors'>
-        <div className='colorContainer baseColorContainer'
+      <div className='swatches'>
+        <div className='swatchContainer baseColorContainer'
           style={{
             backgroundColor: inputColor,
-            color: inputContrastColor
+            swatch: inputContrastColor
           }}>
 
-          <div className='colorInfo'>
-            <input className='resetInput colorInput'
+          <div className='swatchInfo'>
+            <input className='resetInput swatchInput'
               style={{
-                color: inputContrastColor
+                swatch: inputContrastColor
               }}
               type='text'
               value={inputColorDisplay}
@@ -46,17 +46,17 @@ class Colors extends Component {
               autoCapitalize='off'
               spellCheck='false'
               onChange={inputColorOnChange} />
-            <small>Base hex, rgb(a), or keyword color</small>
+            <small>Base hex, rgb(a), or keyword swatch</small>
           </div>
         </div>
 
-        <div className='colorContainer outputColorContainer'
+        <div className='swatchContainer outputColorContainer'
           style={{
             backgroundColor: outputColor,
             color: outputContrastColor
           }}>
-          <div className='colorInfo'>
-            <input className='resetInput colorInput'
+          <div className='swatchInfo'>
+            <input className='resetInput swatchInput'
               style={{
                 color: outputContrastColor
               }}
@@ -71,4 +71,4 @@ class Colors extends Component {
   };
 }
 
-export default Colors;
+export default Swatch;

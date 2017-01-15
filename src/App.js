@@ -15,7 +15,7 @@ import {
   getContrastColor,
 } from 'utils/color';
 
-import Colors from 'components/Colors';
+import Swatch from 'components/Swatch';
 import Controls from 'components/Controls';
 import color from 'color';
 import colorFn from 'css-color-function';
@@ -175,7 +175,7 @@ class App extends Component {
 
     return (
       <main>
-        <Colors {...colorsProps} />
+        <Swatch {...colorsProps} />
         <Controls {...controlsProps} />
       </main>
     );
