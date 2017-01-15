@@ -58,6 +58,7 @@ main {
 }
 
 @media (min-height: 40em) and (max-width: 43em) {
+
   main {
     flex-wrap: nowrap;
     flex-direction: column;
@@ -65,6 +66,7 @@ main {
 }
 
 @media (min-height: 27em) and (min-width: 43em) {
+  
   main {
     flex-wrap: nowrap;
     flex-direction: column;
