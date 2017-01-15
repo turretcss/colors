@@ -41,8 +41,7 @@ class App extends Component {
 
     this.state = {
       adjusters: getAdjustersForColor(baseColor, DEFAULT_ADJUSTERS),
-      colorFuncStr: getColorFuncString(baseColor,
-        getAdjustersString(DEFAULT_ADJUSTERS, useShortNames)),
+      colorFuncStr: getColorFuncString(baseColor, getAdjustersString(DEFAULT_ADJUSTERS, useShortNames)),
       inputColor: baseColor,
       inputContrastColor: getContrastColor(baseColor),
       inputColorDisplay: baseColor,
