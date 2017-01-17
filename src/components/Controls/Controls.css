@@ -22,8 +22,10 @@
 }
 
 .color-function-input {
+  display: block;
   padding: 0;
   margin: 1rem 0 0.7rem 0;
+  width: 100%;
   font-size: 1rem;
   color: #252525;
   border: 0;
