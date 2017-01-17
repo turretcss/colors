@@ -31,7 +31,7 @@ class Swatch extends Component {
           swatch: inputContrastColor
         }}>
 
-        <div className='swatch-info'>
+        <div className='swatch-inner'>
           <input className='reset-input swatch-input'
             style={{
               swatch: inputContrastColor

@@ -1,17 +1,11 @@
 .swatch {
   position: relative;
-  display: flex;
-  flex-basis: 100%;
-  align-items: flex-end;
-  padding: 3rem 1rem;
-  min-height: 8rem;
+  padding: 2rem 1rem;
   transition: background-color 0.2s ease, color 0.2s ease;
 }
 
-.swatch-info {
+.swatch-inner {
   z-index: 10;
-  flex-basis: 100%;
-  max-width: 21rem;
 }
 
 .swatch-input {
