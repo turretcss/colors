@@ -51,6 +51,10 @@ class App extends Component {
     };
   }
 
+  /**
+   * Input Color On Change
+   */
+  
   inputColorOnChange = (event) => {
     const {
       adjusters,
@@ -82,6 +86,10 @@ class App extends Component {
       });
     };
   }
+
+  /**
+   * Adjuster On Change
+   */
 
   adjusterOnChange = (event) => {
     const {
@@ -119,6 +127,10 @@ class App extends Component {
     });
   }
 
+  /**
+   * Store Short Names Option
+   */
+
   storeShortNamesOption = (event) => {
     if (event && event.preventDefault) {
       event.preventDefault();
@@ -138,11 +150,14 @@ class App extends Component {
     localStorage.setItem(SHORT_NAMES_KEY, nextUseShortNames);
 
     this.setState({
-      colorFuncStr: getColorFuncString(inputColor,
-        getAdjustersString(adjusters, nextUseShortNames)),
+      colorFuncStr: getColorFuncString(inputColor, getAdjustersString(adjusters, nextUseShortNames)),
       useShortNames: nextUseShortNames
     });
   }
+
+  /**
+   * Render
+   */
 
   render() {
     const {
