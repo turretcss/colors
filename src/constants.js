@@ -1,6 +1,49 @@
 // export const DEFAULT_BASE_COLOR = `#${Math.random().toString(16).slice(2, 8)}`;
 export const DEFAULT_BASE_COLOR = '#3455DB';
 
+export const DEFAULT_BASE_COLORS = [
+  {
+    color: '#3455DB',
+    name: 'primary',
+  },
+  {
+    color: '#663399',
+    name: 'secondary',
+  },
+  {
+    color: '#8B008B',
+    name: 'tertiary',
+  },
+  {
+    color: '#CCCCCC',
+    name: 'light',
+  },
+  {
+    color: '#666666',
+    name: 'grey',
+  },
+  {
+    color: '#333333',
+    name: 'dark',
+  },
+  {
+    color: '#D91E18',
+    name: 'error',
+  },
+  {
+    color: '#FF4500',
+    name: 'warning',
+  },
+  {
+    color: '#00AA00',
+    name: 'success',
+  },
+  {
+    color: '#1E90FF',
+    name: 'info',
+  },
+];
+
 export const DEFAULT_ADJUSTERS = [
   {
     enabled: false,
