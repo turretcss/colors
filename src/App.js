@@ -42,9 +42,9 @@ class App extends Component {
     this.state = {
       adjusters: getAdjustersForColor(baseColor, DEFAULT_ADJUSTERS),
       colorFuncStr: getColorFuncString(baseColor, getAdjustersString(DEFAULT_ADJUSTERS, useShortNames)),
-      inputColor: baseColor,
-      inputContrastColor: getContrastColor(baseColor),
-      inputColorDisplay: baseColor,
+      baseColor: baseColor,
+      baseColorDisplay: baseColor,
+      contrastColor: getContrastColor(baseColor),
       useShortNames
     };
   }
@@ -72,14 +72,14 @@ class App extends Component {
       this.setState({
         adjusters: nextAdjusters,
         colorFuncStr,
-        inputColor: nextBaseColor,
-        inputContrastColor: getContrastColor(nextBaseColor),
-        inputColorDisplay: nextBaseColor,
+        baseColor: nextBaseColor,
+        baseColorDisplay: nextBaseColor,
+        contrastColor: getContrastColor(nextBaseColor),
         outputColor
       });
     } catch(err) {
       this.setState({
-        inputColorDisplay: nextBaseColor
+        baseColorDisplay: nextBaseColor
       });
     };
   }
@@ -91,7 +91,7 @@ class App extends Component {
   adjusterOnChange = (event) => {
     const {
       adjusters,
-      inputColor,
+      baseColor,
       useShortNames
     } = this.state;
 
@@ -113,8 +113,8 @@ class App extends Component {
     }
 
     const adjustersStr = getAdjustersString(nextAdjusters, useShortNames);
-    const colorFuncStr = getColorFuncString(inputColor, adjustersStr);
-    const outputColor = colorFn.convert(colorFuncStr) || inputColor;
+    const colorFuncStr = getColorFuncString(baseColor, adjustersStr);
+    const outputColor = colorFn.convert(colorFuncStr) || baseColor;
 
     this.setState({
       adjusters: nextAdjusters,
@@ -134,7 +134,7 @@ class App extends Component {
 
     const {
       adjusters,
-      inputColor,
+      baseColor,
       useShortNames
     } = this.state;
 
@@ -146,7 +146,7 @@ class App extends Component {
     localStorage.setItem(SHORT_NAMES_KEY, nextUseShortNames);
 
     this.setState({
-      colorFuncStr: getColorFuncString(inputColor, getAdjustersString(adjusters, nextUseShortNames)),
+      colorFuncStr: getColorFuncString(baseColor, getAdjustersString(adjusters, nextUseShortNames)),
       useShortNames: nextUseShortNames
     });
   }
@@ -159,17 +159,17 @@ class App extends Component {
     const {
       adjusters,
       colorFuncStr,
-      inputColor,
-      inputContrastColor,
-      inputColorDisplay,
+      baseColor,
+      baseColorDisplay,
+      contrastColor,
       outputColor,
       useShortNames
     } = this.state;
 
     const colorsProps = {
-      inputColor,
-      inputContrastColor,
-      inputColorDisplay,
+      baseColor,
+      baseColorDisplay,
+      contrastColor,
       colorOnChange: this.colorOnChange,
       outputColor
     };

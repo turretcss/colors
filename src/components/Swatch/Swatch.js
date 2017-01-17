@@ -4,11 +4,11 @@ import React, {Component, PropTypes} from 'react';
 
 class Swatch extends Component {
   static propTypes = {
-    inputColor: PropTypes.string.isRequired,
-    inputColorDisplay: PropTypes.string.isRequired,
-    inputContrastColor: PropTypes.string.isRequired,
+    baseColor: PropTypes.string.isRequired,
+    baseColorDisplay: PropTypes.string.isRequired,
+    contrastColor: PropTypes.string.isRequired,
     colorOnChange: PropTypes.func,
-    outputColor: PropTypes.string.isRequired,
+    outputColor: PropTypes.string,
   }
 
   static defaultProps = {
@@ -17,27 +17,27 @@ class Swatch extends Component {
 
   render() {
     const {
-      inputColor,
-      inputColorDisplay,
+      baseColor,
+      baseColorDisplay,
       colorOnChange,
-      inputContrastColor,
+      contrastColor,
       outputColor,
     } = this.props;
 
     return (
       <div className='swatch'
         style={{
-          backgroundColor: outputColor || inputColor,
-          swatch: inputContrastColor
+          backgroundColor: outputColor || baseColor,
+          swatch: contrastColor
         }}>
 
         <div className='swatch-inner'>
           <input className='reset-input swatch-input'
             style={{
-              swatch: inputContrastColor
+              swatch: contrastColor
             }}
             type='text'
-            value={inputColorDisplay}
+            value={baseColorDisplay}
             autoComplete='off'
             autoCorrect='off'
             autoCapitalize='off'
