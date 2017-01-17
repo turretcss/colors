@@ -45,17 +45,15 @@ class App extends Component {
       inputColor: baseColor,
       inputContrastColor: getContrastColor(baseColor),
       inputColorDisplay: baseColor,
-      outputColor: baseColor,
-      outputContrastColor: getContrastColor(baseColor),
       useShortNames
     };
   }
 
   /**
-   * Input Color On Change
+   * Color On Change
    */
   
-  inputColorOnChange = (event) => {
+  colorOnChange = (event) => {
     const {
       adjusters,
       useShortNames
@@ -77,8 +75,7 @@ class App extends Component {
         inputColor: nextBaseColor,
         inputContrastColor: getContrastColor(nextBaseColor),
         inputColorDisplay: nextBaseColor,
-        outputColor,
-        outputContrastColor: getContrastColor(outputColor)
+        outputColor
       });
     } catch(err) {
       this.setState({
@@ -122,8 +119,7 @@ class App extends Component {
     this.setState({
       adjusters: nextAdjusters,
       colorFuncStr,
-      outputColor,
-      outputContrastColor: getContrastColor(outputColor)
+      outputColor
     });
   }
 
@@ -167,7 +163,6 @@ class App extends Component {
       inputContrastColor,
       inputColorDisplay,
       outputColor,
-      outputContrastColor,
       useShortNames
     } = this.state;
 
@@ -175,9 +170,8 @@ class App extends Component {
       inputColor,
       inputContrastColor,
       inputColorDisplay,
-      inputColorOnChange: this.inputColorOnChange,
-      outputColor,
-      outputContrastColor
+      colorOnChange: this.colorOnChange,
+      outputColor
     };
 
     const controlsProps = {

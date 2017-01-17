@@ -1,16 +1,9 @@
-.swatches {
-  display: flex;
-  flex-wrap: wrap;
-  flex-grow: 1;
-  align-self: stretch;
-}
-
-.swatch-container {
+.swatch {
   position: relative;
   display: flex;
   flex-basis: 100%;
   align-items: flex-end;
-  padding: 2rem 1rem 3rem 1rem;
+  padding: 3rem 1rem;
   min-height: 8rem;
   transition: background-color 0.2s ease, color 0.2s ease;
 }
@@ -22,9 +15,10 @@
 }
 
 .swatch-input {
-  margin-top: 1rem;
+  display: block;
   padding: 0.5rem 0;
-  font-size: 1.4rem;
+  width: 100%;
+  font-size: 1rem;
   border: 0;
   border-bottom: 1px solid currentColor;
 }
